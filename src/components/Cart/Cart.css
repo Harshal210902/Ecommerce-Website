@@ -84,7 +84,7 @@
     cursor: pointer;
     font-size: 16px;
     color: white;
-    background-color: #8e2ed2;
+    background-color: #168ce0;
 }
 
 .main-cart .cart-content .cart-footer{
@@ -102,7 +102,7 @@
    font-weight: 700;
 }
 .main-cart .cart-content .cart-footer .subtotal .total{
-   color: #8e2ed2;
+   color: #168ce0;
 }
 .main-cart .cart-content .cart-footer .checkout-btn{
     padding: 20px 15px;
@@ -118,7 +118,7 @@
     cursor: pointer;
     font-size: 16px;
     color: white;
-    background-color: #8e2ed2;
+    background-color: #168ce0;
 }
 
 
