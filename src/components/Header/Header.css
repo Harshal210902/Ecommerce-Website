@@ -1,0 +1,97 @@
+/* @import "../../css-config/mixins.css"; */
+
+
+.main-header {
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #212121;
+    color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    z-index: 99;
+}
+.main-header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-header .header-content .left{
+    list-style: none;
+    display: none;
+    gap: 25px;
+}
+.main-header .header-content .left li{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.main-header .header-content .center-logo{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.main-header .header-content .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.main-header .header-content .right svg{
+    font-size: 20px;
+    cursor: pointer;
+}
+.main-header .header-content .right .cart-icon{
+    position: relative;
+}
+.main-header .header-content .right .cart-icon span{
+    min-width: 20px;
+    text-align: center;
+    background-color: #8e2de2;
+    padding: 2.5px;
+    position: absolute;
+    top: -6px;
+    right: -12px;
+    line-height: 80%;
+    border-radius: 10px;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    transform:translateY(-80px);
+    animation: stickyHeader 0.6s ease forwards;       /*forwards*/
+}
+@keyframes stickyHeader {
+    from {transform:translateY(-80px);}
+    to {transform:translateY(0);}
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px)
+{
+    .main-header {
+       padding: 0 40px;
+    }
+    .main-header .header-content{
+       height: 60px;
+    }
+    .main-header .header-content .left{
+        display: flex;
+    }
+    .main-header .header-content .center-logo{
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+    }
+    .main-header .header-content .left li{
+        font-size: 16px;
+    }
+    .main-header .header-content .right svg{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+}
+/* MEDIA QUERIES END */

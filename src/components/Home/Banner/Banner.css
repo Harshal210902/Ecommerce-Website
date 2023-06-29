@@ -1,0 +1,100 @@
+.main-banner{
+    padding: 40px 0;
+    position: relative;
+    background-image: linear-gradient(to right,#b23de3, #7659ff);
+}
+.main-banner .content{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    /* max-width: calc(100%-20px); */
+    margin: 0 auto;
+    position: relative;
+}
+.main-banner .content .text-content{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-banner .content .banner-img{
+    position: relative;
+    z-index: 9;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.main-banner .content .text-content h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.main-banner .content .text-content p{
+    max-width: 300px;
+    font-size: 14px; 
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.main-banner .content .text-content .ctas{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.main-banner .content .text-content .ctas .cta{
+    text-transform: uppercase;
+    font-style: 13px;
+    font-weight: 500;
+    /* width: fit-content; */
+    border: 2px solid white;
+    padding: 10px 20px;
+    /* border-radius: 3px; */
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+.main-banner .content .text-content .ctas .cta:hover{
+    color: black;
+    background-color: white;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px)
+{
+    .main-banner{
+       height: calc(100vh - 80px);
+    }
+    .main-banner .content{
+        flex-direction: row;
+        max-width: 1200px;
+    }
+    .main-banner .content .banner-img{
+        width: 400px;
+        margin-right: 60px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .main-banner .content .text-content{
+       position: absolute;
+       left: 60px;
+       top: 50%;
+       transform: translateY(-50%);
+    }
+    .main-banner .content .text-content h1{
+        font-size: 100px;
+    }
+    .main-banner .content .text-content h1:nth-child(2){
+        font-size: 50px;
+    }
+    .main-banner .content .text-content p{
+        max-width: 600px;
+        font-size: 18px; 
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+    
+    
+}
+/* MEDIA QUERIES END */

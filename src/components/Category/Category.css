@@ -1,0 +1,28 @@
+
+.main-category .layout{
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+}
+.main-category .category-title{
+    font-size: 24px;
+}
+
+.main-category .product-container{
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 768px)
+{
+
+    .main-category .layout{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .main-category .category-title{
+        font-size: 34px;
+    }
+    .main-category .product-container{
+        margin: 40px 0;
+    }
+    
+}
